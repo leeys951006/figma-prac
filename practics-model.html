@@ -8,6 +8,8 @@
   <body>
     <div id="root"></div>
     <script>
+      window.localStorage.setItem('login', 'true');
+
       function elementMaker(tagName, styles, textContent) {
         const element = document.createElement(tagName);
         for (let value in styles) {
